@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="task1_2">
+        <h2>Original Text</h2>
+        <p id="simpleText">
+            One: 'Hi Mary.' Two: 'Oh, hi.'<br>
+            One: 'How are you doing?'<br>
+            Two: 'I'm doing alright. How about you?'<br>
+            One: 'Not too bad. The weather is great isn't it?'<br>
+            Two: 'Yes. It's absolutely beautiful today.'<br>
+            One: 'I wish it was like this more frequently.'<br>
+            Two: 'Me too.'<br>
+            One: 'So where are you going now?'<br>
+            Two: 'I'm going to meet a friend of mine at the department store.'<br>
+            One: 'Going to do a little shopping?'<br>
+            Two: 'Yeah, I have to buy some presents for my parents.'<br>
+            One: 'What's the occasion?'<br>
+            Two: 'It's their anniversary.'<br>
+            One: 'That's great. Well, you better get going. You don't want to be late.'<br>
+            Two: 'I'll see you next time.'<br>
+            One: 'Sure. Bye.'<br>
+        </p>
+        <h2>Modified Text</h2>
+        <p id="modifiedText">
+
+        </p>
+    </div>
+
+    <div id="w">
+        <h1>Написать письмо !</h1>
+        <p id="sendSuccess" class="hidden">Сообщение отправлено!</p>
+        <form id="contactform" name="contact" method="post" action="#">
+            <p class="note"><span class="req">*</span> Поля со звездочкой обязательны для заполнения</p>
+            <div class="row">
+                <label for="name">Ваше Имя <span class="req">*</span></label>
+                <input type="text" name="name" id="name" class="txt" tabindex="1" placeholder="Змей Горыныч" required>
+                <p id="errorDescName" class="hidden">Имя может содержать только буквы!</p>
+            </div>
+
+            <div class="row">
+                <label for="tel">Телефон <span class="req">*</span></label>
+                <input type="text" name="tel" id="tel" class="txt" tabindex="2" placeholder="+7(000)000-0000" required>
+                <p id="errorDescTel" class="hidden">Телефон необходимо ввести в формате +7(000)000-0000!</p>
+            </div>
+
+            <div class="row">
+                <label for="email">E-mail<span class="req">*</span></label>
+                <input type="text" name="email" id="email" class="txt" tabindex="3" placeholder=" address@mail.ru" required>
+                <p id="errorDescEmail" class="hidden">Необходимо ввести валидный email!</p>
+            </div>
+
+            <div class="row">
+                <label for="message">Сообщение <span class="req">*</span></label>
+                <textarea name="message" id="message" class="txtarea" tabindex="4" required></textarea>
+            </div>
+
+            <div class="center">
+                <input type="submit" id="submitbtn" name="submitbtn" tabindex="5" value="Отправить Сообщение">
+            </div>
+        </form>
+    </div>
+
+<script defer src="js/main.js"></script>
+</body>
+</html>
